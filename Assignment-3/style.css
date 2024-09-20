@@ -1,0 +1,382 @@
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 48px 0;
+  margin-bottom: 48px;
+}
+
+.heading-secondery {
+  margin-top: 0;
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 48px;
+}
+
+.section-content {
+  margin-top: 48px;
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.section-image {
+  width: 45%;
+  display: inline-block;
+}
+.section-image img {
+  width: 100%;
+}
+
+.list .list-item {
+  margin-top: 12px;
+}
+
+.list .list-item span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #8e7754;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.list .list-item .icon {
+  width: 100%;
+}
+
+.list .list-item p {
+  margin: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: 50%;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+/* SECTION HOME */
+
+.home {
+  background-image: url(imgs/home/background-img.jpg);
+  height: 95vh;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 48px;
+}
+
+/* NAVBAR */
+
+.navbar {
+  padding: 16px;
+  margin-bottom: 48px;
+}
+
+.navbar-logo {
+  width: 48%;
+  float: left;
+}
+
+.navbar-logo img {
+  width: 150px;
+}
+
+.navbar-list {
+  padding-top: 8px;
+  float: right;
+}
+
+.navbar-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-list li {
+  display: inline-block;
+  margin-left: 24px;
+}
+
+.navbar-list a {
+  color: white;
+  text-decoration: none;
+}
+
+/* SECTION HOME CONTENT */
+
+.home-content {
+  padding-top: 48px;
+  color: white;
+  text-align: center;
+}
+
+.home-content .welcom {
+  margin-top: 48px;
+  font-size: 20px;
+}
+
+.home-content .title {
+  margin-top: 24px;
+  font-size: 62px;
+}
+
+.home-content .subtitle {
+  font-size: 24px;
+}
+
+.home-content .subtitle span {
+  margin: 16px 0 48px;
+  display: block;
+}
+
+.home-content button {
+  color: white;
+  font-weight: bold;
+  padding: 16px 18px;
+  font-size: 14px;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.home-content .learn-more {
+  background-color: #8e7754;
+  border: none;
+  margin-right: 8px;
+  border-color: #8e7754;
+}
+
+.home-content .contact-us {
+  background-color: transparent;
+  border-color: white;
+}
+
+/* WHO WE ARE SECTION */
+
+.who-section {
+  color: #292219;
+}
+
+.who-image {
+  margin-right: 48px;
+}
+
+/* OUR LOCATION SECTION */
+
+.our-location-section {
+  background-color: #f8f8f8;
+  color: #292219;
+}
+.our-location-section .container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.our-location-content {
+  margin-right: 48px;
+  color: #292219;
+}
+
+/* OUR Baking SECTION */
+.our-baking-section {
+  text-align: center;
+}
+
+.our-baking-product {
+  width: 31%;
+  float: left;
+  margin-right: 42px;
+}
+
+.last {
+  margin-right: 0;
+}
+
+.baking-product-image {
+  width: 100%;
+}
+
+.baking-product-image img {
+  width: 100%;
+}
+
+.baking-product-name {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.baking-product-description {
+  padding: 0 10px;
+  margin-bottom: 0;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  background-color: #f8f8f8;
+}
+
+.contact-section .container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.contact-imformation {
+  width: 45%;
+  margin-right: 48px;
+  float: left;
+}
+
+.contact-map {
+  width: 45%;
+  float: left;
+}
+.contact-map img {
+  width: 100%;
+}
+
+.contact-header {
+  font-size: 24px;
+}
+
+.contact-description {
+  line-height: 1.5;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.contact-list-item span {
+  background-color: #8e7754;
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  color: #a5a4a2;
+}
+.about-us {
+  background-color: #403d38;
+  margin-bottom: 0;
+}
+
+.about-us .column {
+  width: 24%;
+  float: left;
+  margin-right: 16px;
+}
+
+.about-us .header {
+  color: white;
+  margin-bottom: 32px;
+}
+
+.contact-details.column {
+  margin-right: 0;
+}
+
+.about-us .list-item {
+  border-bottom: 1px solid #8684805d;
+  padding: 8px;
+}
+
+.about-us .list-item span {
+  width: 18px;
+  height: 18px;
+  border: none;
+  margin-right: 0;
+}
+.about-us .list-item p {
+  vertical-align: 25%;
+  font-size: 14px;
+}
+
+.about-us .list-item.last {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.contact-details {
+  background-image: url(imgs/footer/contact-details-map.png);
+  background-repeat: no-repeat;
+  background-position: 0 150px;
+}
+
+.contact-details .list-item span {
+  width: 36px;
+  height: 36px;
+}
+
+.contact-details .list-item p {
+  vertical-align: 85%;
+  width: 80%;
+}
+
+.contact-details .list-item.first p {
+  vertical-align: middle;
+  width: 80%;
+  padding-bottom: 8px;
+}
+
+.socials {
+  background-color: #353330;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer-logo {
+  margin-bottom: 32px;
+}
+
+.copyright {
+  margin-bottom: 32px;
+}
+
+.socials-logos {
+  width: 220px;
+  margin: auto;
+}
+
+.socials-logos .logo {
+  width: 48px;
+  height: 48px;
+  float: left;
+  background-color: #403d38;
+  margin-right: 9px;
+  border-radius: 50%;
+}
+
+.socials-logos .logo img {
+  width: 100%;
+}
+
+.socials-logos .logo.last {
+  margin-right: 0;
+}
+
+/* 
+### Font sizes (px)
+- 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+### SPACING SYSTEM (px)
+- 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+ */
