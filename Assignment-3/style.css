@@ -234,6 +234,7 @@ a {
 /* CONTACT SECTION */
 .contact-section {
   background-color: #f8f8f8;
+  margin-bottom: 0;
 }
 
 .contact-section .container {
