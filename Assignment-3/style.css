@@ -202,11 +202,13 @@ a {
 .our-baking-section {
   text-align: center;
 }
-
+.our-baking-products {
+  width: 100%;
+}
 .our-baking-product {
   width: 31%;
   float: left;
-  margin-right: 42px;
+  margin-right: 37px;
 }
 
 .last {
