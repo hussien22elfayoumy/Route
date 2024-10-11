@@ -18,23 +18,29 @@
 :root {
   --inter-font: 'Inter', sans-serif;
   --amatic-font: 'Amatic SC', sans-serif;
+  --main-color: #cf1212;
+
+  --transition-4: all 0.4s ease;
 }
 
 html {
-  font-size: 62.5%; /* 100/(16px*10px)= 62.5  10px easy to calc rem unit*/
+  font-size: 62.5%; /* (10px/16px) * 100 = 62.5  10px easy to calc rem unit*/
 }
 
 body {
   font-family: var(--inter-font);
+  font-weight: 400;
+  color: #222;
+  height: 5000px;
 }
 
-ul {
+li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  /* color: inherit; */
+  color: inherit;
 }
 
 img {
@@ -43,6 +49,7 @@ img {
 }
 
 .container {
-  width: 90%;
+  max-width: 1320px;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
