@@ -7,7 +7,6 @@
   .container {
     max-width: 950px;
   }
-
   .nav-links {
     order: 1;
   }
@@ -24,21 +23,35 @@
     background-color: white;
     position: absolute;
     right: 0;
-    top: 4.8rem;
+    top: 0;
     width: 25rem;
     padding: 4rem;
     height: 50rem;
     transform: translateX(100%);
-    transition: var(--transition-3);
+    transition: var(--transition-4);
   }
 
   .nav-links:hover .nav-transition {
     transform: translateX(0);
   }
 }
+
 @media screen and (max-width: 994px) {
   .container {
     max-width: 750px;
+  }
+  .hero-section .container {
+    flex-direction: column;
+  }
+  .hero-details {
+    order: 1;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    margin-bottom: 4.6rem;
   }
 }
 

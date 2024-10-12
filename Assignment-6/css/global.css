@@ -19,12 +19,14 @@
   --inter-font: 'Inter', sans-serif;
   --amatic-font: 'Amatic SC', sans-serif;
   --main-color: #cf1212;
+  --main-color-hover: #e61414;
 
   --transition-4: all 0.4s ease;
 }
 
 html {
   font-size: 62.5%; /* (10px/16px) * 100 = 62.5  10px easy to calc rem unit*/
+  scroll-behavior: smooth;
 }
 
 body {
@@ -32,6 +34,7 @@ body {
   font-weight: 400;
   color: #222;
   height: 5000px;
+  overflow-x: hidden;
 }
 
 li {
