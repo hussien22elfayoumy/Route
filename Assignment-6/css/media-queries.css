@@ -34,6 +34,9 @@
   .nav-links:hover .nav-transition {
     transform: translateX(0);
   }
+  .gallery-section .gallery {
+    height: 80rem;
+  }
 }
 
 @media screen and (max-width: 994px) {
@@ -53,15 +56,67 @@
     max-width: 100%;
     margin-bottom: 4.6rem;
   }
+
+  .chef-card {
+    max-width: calc(100% / 2 - 1.2rem);
+    margin-bottom: 2.4rem;
+  }
+
+  .gallery-section .gallery {
+    height: 145rem;
+  }
+
+  .gallery-section .gallery-img {
+    max-width: calc(100% / 2 - 1.2rem);
+  }
+  .pizza {
+    order: 1;
+  }
+  .pizz-slice {
+    order: 3;
+  }
+  .steek {
+    order: 5;
+  }
+  .frittata {
+    order: 4;
+  }
+  .burger {
+    order: 2;
+  }
+  .chicken {
+    order: 6;
+  }
+  .kebab {
+    order: 7;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 55%; /* 9px */
+  }
   .container {
     max-width: 590px;
+  }
+
+  .chef-card {
+    max-width: 100%;
+  }
+
+  .gallery-section .gallery {
+    height: auto;
+  }
+
+  .gallery-section .gallery-img {
+    max-width: 100%;
   }
 }
 
 @media screen and (max-width: 576px) {
+  html {
+    font-size: 50%; /* 8px */
+  }
   .container {
     max-width: 100%;
   }
