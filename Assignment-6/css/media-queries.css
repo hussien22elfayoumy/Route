@@ -37,6 +37,20 @@
   .gallery-section .gallery {
     height: 80rem;
   }
+
+  .footer .container {
+    flex-wrap: wrap;
+  }
+  .footer .social-media-box,
+  .footer .get-in-touch-box {
+    width: calc(50% - 2.4rem);
+  }
+
+  .footer .subscribe-box {
+    margin-top: 2.4rem;
+    order: 1;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 994px) {
@@ -118,6 +132,21 @@
 
   .contact-section .contact-details {
     width: 100%;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .footer .social-media-box,
+  .footer .get-in-touch-box,
+  .footer .subscribe-box {
+    width: 100%;
+  }
+
+  .footer .get-in-touch-box {
+    order: 2;
   }
 }
 

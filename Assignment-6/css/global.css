@@ -82,6 +82,23 @@ img {
   color: var(--main-color);
 }
 
+.website-logo {
+  width: fit-content;
+  font-size: 3rem;
+  font-weight: 700;
+  position: relative;
+}
+.website-logo::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  position: absolute;
+  right: -8px;
+  top: 70%;
+}
+
 /* 
 ### Font sizes (px)
 - 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
