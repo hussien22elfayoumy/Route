@@ -390,6 +390,123 @@
   opacity: 1;
   height: 100%;
 }
+/* SECTION:- CONTACT */
+
+.contact-section {
+  padding: 4.8rem 0 4.8rem;
+}
+
+.contact-section .map {
+  max-width: 100%;
+  margin-bottom: 2.4rem;
+}
+.contact-section .map iframe {
+  width: 100%;
+  height: 40rem;
+}
+.contact-section .contact {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.contact-section .contact-details {
+  background-color: #eee;
+  width: calc(100% / 2 - 1.2rem);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-details .icon {
+  background-color: var(--main-color);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  position: relative;
+}
+.contact-details .icon i {
+  font-size: 2rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-details .details h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(125, 125, 125);
+  margin-bottom: 1.2rem;
+}
+.contact-details .details p {
+  font-size: 1.6rem;
+  color: rgb(125, 125, 125);
+}
+.contact-details .details span {
+  font-weight: 700;
+  color: rgb(33, 37, 41);
+}
+
+.contact-section form {
+  text-align: center;
+
+  padding: 2rem;
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.contact-section form textarea {
+  min-height: 12rem;
+  resize: vertical;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+  font-size: 1.6rem;
+  outline: none;
+  border: 2px solid #ccc;
+  padding: 1.8rem;
+  width: 100%;
+  transition: var(--transition-4);
+}
+
+.contact-section form .user {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.contact-section form .subject {
+  margin-bottom: 1.6rem;
+}
+
+.contact-section form .text-area {
+  margin-bottom: 3.2rem;
+}
+
+.contact-section form input:focus,
+.contact-section form textarea:focus {
+  border: 2px solid var(--main-color);
+}
+
+.contact-section form button {
+  font-size: 1.6rem;
+  border: none;
+  background-color: var(--main-color);
+  padding: 1.6rem 4.8rem;
+  color: #fff;
+  border-radius: 999rem;
+  cursor: pointer;
+  transition: var(--transition-4);
+}
+
+.contact-section form button:hover {
+  background-color: var(--main-color-hover);
+}
 
 /* 
 ### Font sizes (px)

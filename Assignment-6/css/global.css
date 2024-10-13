@@ -61,6 +61,10 @@ img {
   padding: 0 1.5rem;
 }
 
+.special-heading {
+  text-align: center;
+}
+
 .special-heading p {
   font-size: 1.4rem;
   text-transform: uppercase;

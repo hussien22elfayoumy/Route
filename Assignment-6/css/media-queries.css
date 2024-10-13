@@ -90,6 +90,10 @@
   .kebab {
     order: 7;
   }
+
+  .contact-section form .user {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -110,6 +114,10 @@
 
   .gallery-section .gallery-img {
     max-width: 100%;
+  }
+
+  .contact-section .contact-details {
+    width: 100%;
   }
 }
 
