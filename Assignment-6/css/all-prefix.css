@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* 
 ### Font sizes (px)
 - 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
@@ -40,6 +47,26 @@
   --main-color-hover: #e61414;
 
   --transition-4: all 0.4s ease;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 999rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color-hover);
 }
 
 html {
@@ -296,17 +323,17 @@ img {
 .btn-watch .circle {
   width: 5.7rem;
   height: 5.7rem;
+  background-image: -o-linear-gradient(
+    left,
+    red 50%,
+    rgba(255, 255, 255, 0) 50%
+  );
   background-image: -webkit-gradient(
     linear,
     left top,
     right top,
     color-stop(50%, red),
     color-stop(50%, rgba(255, 255, 255, 0))
-  );
-  background-image: -o-linear-gradient(
-    left,
-    red 50%,
-    rgba(255, 255, 255, 0) 50%
   );
   background-image: linear-gradient(
     to right,
@@ -778,6 +805,8 @@ img {
 .footer {
   color: #fff;
   padding: 3.2rem 0 3.2rem;
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../imgs/footer.jpg);
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -785,8 +814,6 @@ img {
       from(rgba(0, 0, 0, 0.5)),
       to(rgba(0, 0, 0, 0.5))
     ),
-    url(../imgs/footer.jpg);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../imgs/footer.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../imgs/footer.jpg);

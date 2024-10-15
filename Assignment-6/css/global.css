@@ -29,6 +29,27 @@
   --transition-4: all 0.4s ease;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 999rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color-hover);
+}
+
 html {
   font-size: 62.5%; /* (10px/16px) * 100 = 62.5  10px easy to calc rem unit*/
   scroll-behavior: smooth;
