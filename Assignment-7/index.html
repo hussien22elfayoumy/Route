@@ -13,7 +13,163 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/media-quires.css" />
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbarNav">
+    <!-- SECTION NAVBAR -->
+    <nav class="navbar-section navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">DevFolio</a>
+
+        <button
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          class="navbar-toggler border-0"
+          type="button"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span>
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-lg-grow-0" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div
+      class="navbar-modal modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content bg-transparent">
+          <div class="modal-header justify-content-end">
+            <button
+              type="button"
+              class="border-0 bg-transparent text-white fs-3"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <div class="modal-body bg-white">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Work </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION HERO -->
+    <section
+      id="home"
+      class="hero-section d-flex align-items-center justify-content-center text-white text-center"
+    >
+      <div class="content">
+        <h1 class="mb-4">I am Morgan Freeman</h1>
+        <p>Developer</p>
+      </div>
+    </section>
+
     <script src="js/bundle.min.js"></script>
   </body>
 </html>

@@ -1,1 +1,100 @@
+/* GLOBALS */
+:root {
+  --color-primary: #0078ff;
+}
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* SECTION NAVBAR */
+.navbar-section.navbar {
+  --bs-navbar-brand-color: #fff;
+  --bs-navbar-brand-hover-color: #fff;
+  --bs-navbar-color: #fff;
+  --bs-navbar-active-color: #fff;
+  --bs-navbar-hover-color: #fff;
+}
+
+.navbar-section .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-section .navbar-nav,
+.navbar-modal .navbar-nav {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+.navbar-section .navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar-section .nav-item::after,
+.navbar-section .nav-item .active::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: red;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  transition: all 0.3s ease;
+}
+
+.navbar-section .nav-item .active::after {
+  width: 65%;
+}
+
+.navbar-section .nav-item:hover::after {
+  width: 65%;
+}
+
+.navbar-modal .nav-item:hover {
+  color: var(--color-primary);
+}
+
+.navbar-modal .nav-item .active {
+  color: var(--color-primary);
+}
+
+.navbar-modal .modal-fullscreen {
+  height: calc(100vh - 2rem);
+  width: calc(100vw - 2rem);
+  margin: 0 auto 2rem;
+}
+
+.navbar-modal .modal-header {
+  background-color: transparent;
+}
+
+.navbar-modal .active {
+  color: var(--color-primary);
+}
+
+/* SECTION HERO */
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../imgs/hero-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
