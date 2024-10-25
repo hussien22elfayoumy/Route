@@ -21,12 +21,23 @@ ul {
 }
 
 /* SECTION NAVBAR */
+
+.navbar-section {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .navbar-section.navbar {
   --bs-navbar-brand-color: #fff;
   --bs-navbar-brand-hover-color: #fff;
   --bs-navbar-color: #fff;
   --bs-navbar-active-color: #fff;
   --bs-navbar-hover-color: #fff;
+}
+
+.navbar-section .navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .navbar-section .navbar-toggler:focus {
@@ -42,26 +53,30 @@ ul {
 
 .navbar-section .navbar-nav .nav-item {
   position: relative;
+  margin-left: 1rem;
 }
 
-.navbar-section .nav-item::after,
-.navbar-section .nav-item .active::after {
+.navbar-section .nav-item .nav-link::after,
+.navbar-section .nav-item .nav-link.active::after {
   content: '';
   width: 0;
-  height: 2px;
+  height: 1.5px;
   background-color: #fff;
   display: block;
   position: absolute;
+  visibility: hidden;
   bottom: 0;
   left: 8px;
   transition: all 0.3s ease;
 }
 
-.navbar-section .nav-item .active::after {
+.navbar-section .nav-item .nav-link.active::after {
+  visibility: visible;
   width: 65%;
 }
 
-.navbar-section .nav-item:hover::after {
+.navbar-section .nav-item .nav-link:hover::after {
+  visibility: visible;
   width: 65%;
 }
 
