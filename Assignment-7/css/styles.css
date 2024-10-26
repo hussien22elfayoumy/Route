@@ -300,3 +300,22 @@ ul {
 .portfolio-section .portfolio-card:hover .porfolio-image img {
   transform: scale(1.2);
 }
+
+/* SECTION SLIDER */
+
+.testimonial-section {
+  background-image: linear-gradient(
+      rgb(0, 120, 255, 0.7),
+      rgb(0, 120, 255, 0.7)
+    ),
+    url(../imgs/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.testimonial-section .testimonial-card .testimonial-image {
+  width: 15%;
+  border-radius: 50%;
+  overflow: hidden;
+}
