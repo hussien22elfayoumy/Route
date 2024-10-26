@@ -5,6 +5,8 @@
 
   --text-gray: rgb(78, 78, 78);
   --text-gray-dark: rgb(30, 30, 30);
+
+  --transition-5: all 0.5s ease;
 }
 
 body {
@@ -84,7 +86,7 @@ ul {
   visibility: hidden;
   bottom: 0;
   left: 8px;
-  transition: all 0.3s ease;
+  transition: var(--transition-5);
 }
 
 .navbar-section .nav-item .nav-link.active::after {
@@ -221,7 +223,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s ease;
+  transition: var(--transition-5);
 }
 
 .services-section .services-card:hover .services-icon {
@@ -294,7 +296,7 @@ ul {
 }
 
 .portfolio-section .porfolio-image img {
-  transition: all 0.5s ease;
+  transition: var(--transition-5);
 }
 
 .portfolio-section .portfolio-card:hover .porfolio-image img {
@@ -318,4 +320,41 @@ ul {
   width: 15%;
   border-radius: 50%;
   overflow: hidden;
+}
+
+/* SECTION BLOG */
+
+.blog-section .blog-image {
+  width: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.blog-section .card-body .card-title {
+  width: fit-content;
+  transition: var(--transition-5);
+}
+
+.blog-section .card-body .card-title:hover {
+  color: var(--color-primary);
+}
+
+.blog-section .card-footer p {
+  transition: var(--transition-5);
+}
+
+.blog-section .card-footer p:hover {
+  color: var(--color-primary);
+}
+
+.blog-section .card-body .card-tag {
+  background-color: var(--color-primary);
+  font-size: 0.8rem;
+  color: #fff;
+  padding: 6px 16px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
