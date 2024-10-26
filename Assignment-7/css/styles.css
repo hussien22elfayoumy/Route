@@ -238,10 +238,30 @@ ul {
 
 .counter-section {
   background-image: linear-gradient(
-      rgb(0, 120, 255, 0.5),
-      rgb(0, 120, 255, 0.5)
+      rgb(0, 120, 255, 0.7),
+      rgb(0, 120, 255, 0.7)
     ),
     url(../imgs/counters-bg.jpg);
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
+}
+
+.counter-section .counter-card span {
+  font-size: 2rem;
+}
+
+.counter-section .counter-card p {
+  text-transform: uppercase;
+}
+
+.counter-section .counter-card .counter-icon {
+  font-size: 1.5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 8px solid var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
