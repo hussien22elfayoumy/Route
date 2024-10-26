@@ -21,6 +21,10 @@ ul {
   list-style: none;
 }
 
+.color-primary {
+  color: var(--color-primary);
+}
+
 .special-header h2 {
   font-size: 3rem;
   text-transform: uppercase;
@@ -234,7 +238,7 @@ ul {
   margin: 1rem 0 1.1rem;
 }
 
-/* SECTION TIMER */
+/* SECTION COUNTER */
 
 .counter-section {
   background-image: linear-gradient(
@@ -255,7 +259,7 @@ ul {
   text-transform: uppercase;
 }
 
-.counter-section .counter-card .counter-icon {
+.counter-section .counter-icon i {
   font-size: 1.5rem;
   width: 5rem;
   height: 5rem;
@@ -264,4 +268,35 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* SECTION PORTFOLIO */
+
+.portfolio-section .portfolio-card h3 {
+  font-size: 1.2rem;
+  color: var(--text-gray-dark);
+}
+
+.portfolio-section .portfolio-card p {
+  font-size: 0.8125rem;
+}
+
+.portfolio-section .portfolio-icon i {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  border: 3px solid var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-section .porfolio-image img {
+  transition: all 0.5s ease;
+}
+
+.portfolio-section .portfolio-card:hover .porfolio-image img {
+  transform: scale(1.2);
 }
