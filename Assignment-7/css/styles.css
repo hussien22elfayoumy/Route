@@ -137,9 +137,60 @@ ul {
   font-weight: 600;
 }
 
-.hero-section p {
+.hero-section .toggle {
+  overflow: hidden;
+  width: 200px;
+  height: 50px;
+  border-right: 5px solid #fff;
   font-size: 1.5rem;
   font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  animation-name: toggle;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.hero-section .toggle::after {
+  content: '';
+  font-size: 2.5rem;
+  font-weight: 600;
+  position: absolute;
+  left: 0;
+
+  animation-name: words;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes words {
+  0% {
+    content: 'Developer';
+  }
+
+  50% {
+    content: 'Freelancer';
+  }
+
+  100% {
+    content: 'Developer';
+  }
+}
+
+@keyframes toggle {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 200px;
+  }
+
+  100% {
+    width: 0;
+  }
 }
 
 /* SECTION ABOUT */
