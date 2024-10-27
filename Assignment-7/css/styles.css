@@ -449,3 +449,10 @@ ul {
   background-color: var(--color-primary);
   border-color: var(--color-primary-light);
 }
+
+/* SECTION FOOTER */
+
+footer {
+  background-color: #0062d3;
+  box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
