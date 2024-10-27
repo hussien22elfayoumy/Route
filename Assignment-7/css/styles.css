@@ -456,3 +456,37 @@ footer {
   background-color: #0062d3;
   box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
+
+.navigate-up {
+  width: 2.6rem;
+  height: 2.6rem;
+  color: #fff;
+  background-color: var(--color-primary);
+  position: fixed;
+  bottom: 1.2rem;
+  right: 1.2rem;
+}
+
+/* MEDIA QUIRES */
+
+@media screen and (min-width: 577px) {
+}
+@media screen and (min-width: 768px) {
+  .hero-section h1 {
+    font-size: 4rem;
+  }
+
+  .hero-section p {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero-section h1 {
+    font-size: 4.5rem;
+  }
+  .hero-section p {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+}

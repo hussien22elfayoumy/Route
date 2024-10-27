@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/media-quires.css" />
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbarNav">
     <!-- SECTION NAVBAR -->
@@ -162,7 +161,7 @@
     <!-- SECTION HERO -->
     <section
       id="home"
-      class="hero-section d-flex align-items-center justify-content-center text-white text-center"
+      class="hero-section d-flex align-items-center justify-content-center text-white text-center z-3 position-relative"
     >
       <div class="content">
         <h1 class="mb-4">I am Morgan Freeman</h1>
@@ -725,7 +724,7 @@
     <!-- SECTION CONTACT -->
 
     <section class="contact-section py-5" id="contact">
-      <div class="container bg-white p-5 mt-5">
+      <div class="container bg-white p-5 mt-5 rounded-2">
         <div class="row gy-5">
           <div class="col-lg-6">
             <div class="message-us">
@@ -815,6 +814,13 @@
       </p>
       <p class="author m-0">Designed by BootstrapMade</p>
     </footer>
+
+    <!-- NAVIGATE UP -->
+    <div
+      class="navigate-up d-flex align-items-center justify-content-center rounded-circle z-2"
+    >
+      <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
 
     <script src="js/bundle.min.js"></script>
   </body>
