@@ -1,0 +1,164 @@
+:root {
+  --main-color: #1c1c1c;
+  --text-color-light: #748182;
+  --text-color-dark: #343434;
+  --transition-main: all 0.4s ease;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: var(--text-color-light);
+  height: 3000px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-color-dark);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* SECTION HERO ================================ */
+.hero-section {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../imgs/hero-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.hero-section h3 {
+  font-size: 2.5rem;
+  line-height: 55px;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-bottom: 2.5rem;
+}
+
+.hero-section h1::after {
+  content: '';
+  font-weight: 500;
+  margin-left: 0.8rem;
+
+  animation-name: word;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* prettier-ignore */
+@keyframes word {
+  0% {content: '|';}
+  4% {content: 'Lar |';}
+  8% {content: 'Larry |';}
+  12% {content: 'Larry Da |';}
+  16% {content: 'Larry Dani |';}
+  20% {content: 'Larry Daniel |';}
+  24% {content: 'Larry Daniels |';}
+  27% {content: 'Larry Daniel |';}
+  30% {content: 'Larry Dani |';}
+  33% {content: 'Larry Da |';}
+  37% {content: 'Larry |';}
+  40% {content: 'Lar |';}
+  44% {content: '|';}
+  47% {content: 'De |';}
+  50% {content: 'Deve |';}
+  54% {content: 'Develo |';}
+  58% {content: 'Developer |';}
+  62% {content: 'Develo |';}
+  68% {content: 'Deve |';}
+  71% {content: 'De |';}
+  76% {content: '|';}
+  79% {content: 'De |';}
+  82% {content: 'Desi |';}
+  85% {content: 'Design |';}
+  88% {content: 'Designer |';}
+  90% {content: 'Design |';}
+  93% {content: 'Desi |';}
+  97% {content: 'De |';}
+  100% {content: '|';}
+}
+
+.hero-section .social-icons li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus,
+.nav-link,
+.navbar-nav .nav-link.active,
+.nav-link:hover,
+.nav-link:focus {
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: '';
+  background-color: #fff;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  bottom: 8px;
+  left: 0px;
+  transition: var(--transition-main);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media screen and (min-width: 577px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px) {
+  .hero-section h3 {
+    font-size: 3.125rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+}
