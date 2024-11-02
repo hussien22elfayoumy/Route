@@ -3,6 +3,7 @@
   --text-color-light: #748182;
   --text-color-dark: #343434;
   --transition-main: all 0.4s ease;
+  --text-mont: 'Montserrat', sans-serif;
 }
 
 body {
@@ -216,7 +217,77 @@ a {
 
 /* SECTION ABOUT ================================ */
 
-@media screen and (min-width: 577px) {
+.about-section .dots-bg {
+  position: absolute;
+  left: -30px;
+  bottom: -30px;
+  width: 100%;
+  height: 90%;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+.about-section .header {
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.about-section .subheader {
+  font-size: 0.875rem;
+  color: rgb(153, 153, 153);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.about-section .info {
+  font-size: 0.9375rem;
+  line-height: 25px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.about-section .progress {
+  background-color: #fff;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.about-section .progress-bar {
+  background-color: var(--main-color);
+}
+
+.about-section .progress-bar span {
+  font-family: var(--text-mont);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.about-section .buttons .btn {
+  font-size: 13px;
+  padding: 10px 30px;
+  border: 1px solid var(--main-color);
+  transition: var(--transition-main);
+}
+
+.about-section .buttons .btn-black {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.about-section .buttons .btn-black:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+
+.about-section .buttons .btn-white:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+@media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 768px) {
 }
@@ -232,4 +303,7 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
