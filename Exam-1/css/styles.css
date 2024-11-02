@@ -508,6 +508,73 @@ a {
   font-weight: 600;
 }
 
+/* SECTION OUR TEAM ================================ */
+
+.team-card .team-overlay {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  background-color: #fff;
+  z-index: 2;
+
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.5) rotateY(180deg);
+
+  transition: var(--transition-main);
+}
+
+.team-card .team-image-container .team-image {
+  transition: var(--transition-main);
+}
+
+.team-card .team-image-container:hover .team-image {
+  transform: scale(1.2);
+}
+.team-card .team-image-container:hover .team-overlay,
+.team-card:hover .team-overlay {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1) rotateY(360deg);
+}
+
+.team-card .team-overlay i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
+  color: #fff;
+  transition: var(--transition-main);
+}
+
+.team-card .team-overlay i:hover {
+  color: var(--main-color);
+  background-color: #fff;
+}
+
+.team-section .team-details {
+  background-color: #5b5b5b;
+}
+
+.team-section .team-details h5 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.team-section .team-details h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
 /* SECTION FOOTER ================================ */
 
 footer {
