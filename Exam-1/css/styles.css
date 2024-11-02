@@ -65,41 +65,48 @@ a {
 }
 
 /* SECTION NAVBAR ================================ */
-.navbar {
-  background-color: rgba(0, 0, 0, 0.3);
+.navbar-section .navbar {
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
 }
 
-.navbar-brand {
+.navbar-section .navbar-brand {
   letter-spacing: 1px;
 }
 
-.navbar-brand,
-.navbar-brand:hover,
-.navbar-brand:focus,
-.nav-link,
-.navbar-nav .nav-link.active,
-.nav-link:hover,
-.nav-link:focus {
+.navbar-section .navbar-brand,
+.navbar-section .navbar-brand:hover,
+.navbar-section .navbar-brand:focus,
+.navbar-section .nav-link,
+.navbar-section .navbar-nav .nav-link.active,
+.navbar-section .nav-link:hover,
+.navbar-section .nav-link:focus {
   color: #fff;
 }
 
-.navbar-nav .nav-link {
+.navbar-section .navbar-nav .nav-link,
+.navbar-section .navbar-nav .nav-link.active {
   position: relative;
 }
 
-.navbar-nav .nav-link.active::after {
+.navbar-section .navbar-nav .nav-link::before,
+.navbar-section .navbar-nav .nav-link.active::before {
   content: '';
   background-color: #fff;
   height: 2px;
+  width: 0;
   position: absolute;
-  width: 100%;
-  bottom: 8px;
+  display: block;
+  bottom: 5px;
   left: 0px;
   transition: var(--transition-main);
 }
 
-.navbar-toggler:focus {
+.navbar-section .navbar-nav .nav-link.active::before {
+  width: 100%;
+}
+
+.navbar-section .navbar-toggler:focus {
   box-shadow: none;
 }
 
@@ -183,7 +190,7 @@ a {
   border-radius: 50%;
 }
 
-.overlay {
+.loading-overlay {
   position: absolute;
   width: 100%;
   top: 50%;
@@ -217,7 +224,7 @@ a {
   }
 }
 
-.spinner {
+.loading-spinner {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -346,6 +353,103 @@ a {
 .services-section .services-card:hover .icon {
   background-color: var(--main-color);
   color: #fff;
+}
+/* SECTION PORTFOLIO ================================ */
+
+.portfolio-image {
+  position: relative;
+}
+
+.portfolio-image .p-overlay {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transition-main);
+}
+
+.portfolio-image .p-overlay h4 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 13px;
+  transform: translateY(-20px);
+  transition: var(--transition-main);
+}
+
+.portfolio-image .p-overlay i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--main-color);
+  color: #fff;
+  background-color: var(--main-color);
+
+  transform: translateY(20px);
+  transition: var(--transition-main);
+}
+
+.portfolio-image .p-overlay i:hover {
+  color: var(--main-color);
+  background-color: #fff;
+}
+
+.portfolio-image:hover .p-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.portfolio-image:hover .p-overlay i,
+.portfolio-image:hover .p-overlay h4 {
+  transform: translateY(0);
+}
+
+.nav-tabs {
+  border-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+  padding: 0;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  color: var(--main-color);
+  position: relative;
+}
+
+.nav-tabs .nav-link.active {
+  background: none;
+  color: var(--main-color);
+  position: relative;
+}
+
+.nav-tabs .nav-link::after,
+.nav-tabs .nav-link.active::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: var(--main-color);
+  left: 0;
+  bottom: -5px;
+  transition: var(--transition-main);
+}
+
+.nav-tabs .nav-link.active::after {
+  width: 100%;
 }
 
 @media screen and (min-width: 576px) {
