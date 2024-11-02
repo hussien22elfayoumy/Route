@@ -84,25 +84,25 @@ a {
   color: #fff;
 }
 
-.navbar-section .navbar-nav .nav-link,
-.navbar-section .navbar-nav .nav-link.active {
+.navbar-section .nav-link,
+.navbar-section .nav-link.active {
   position: relative;
 }
 
-.navbar-section .navbar-nav .nav-link::before,
-.navbar-section .navbar-nav .nav-link.active::before {
+.navbar-section .nav-link::before,
+.navbar-section .nav-link.active::before {
   content: '';
   background-color: #fff;
   height: 2px;
   width: 0;
   position: absolute;
   display: block;
-  bottom: 5px;
   left: 0px;
+  bottom: 5px;
   transition: var(--transition-main);
 }
 
-.navbar-section .navbar-nav .nav-link.active::before {
+.navbar-section .nav-link.active::before {
   width: 100%;
 }
 
@@ -118,7 +118,8 @@ a {
     url(../imgs/hero-bg.jpg);
   background-position: center center;
   background-size: cover;
-  position: relative;
+  background-attachment: fixed;
+  /* position: relative; */
   overflow: hidden;
 }
 
@@ -191,7 +192,7 @@ a {
 }
 
 .loading-overlay {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
@@ -229,10 +230,10 @@ a {
   height: 50px;
   border-radius: 50%;
   border-style: solid;
-  border-color: black rgba(255, 255, 255, 0.8) rgba(255, 255, 255, 0.8)
-    rgba(255, 255, 255, 0.8);
+  border-color: black rgba(180, 180, 180, 0.8) rgba(180, 180, 180, 0.8)
+    rgba(180, 180, 180, 0.8);
   border-width: 10px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -450,6 +451,61 @@ a {
 
 .nav-tabs .nav-link.active::after {
   width: 100%;
+}
+
+/* SECTION TESTIMONIAL ================================ */
+
+.testimonial-section {
+  padding-bottom: 120px;
+}
+
+.testimonial-card p {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.testimonial-card .author h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.testimonial-card .author span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.carousel-indicators {
+  bottom: -70px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--main-color);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.carousel-indicators [data-bs-target]:hover {
+  opacity: 1;
+}
+
+/* SECTION COUNTER ================================ */
+.counter-section i {
+  font-size: 30px;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.counter-section h3 {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.counter-section p {
+  font-size: 15px;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 576px) {
