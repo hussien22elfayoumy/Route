@@ -325,3 +325,150 @@ else {
       console.log('enter a valid month');
   }
 } */
+
+// NOTE:- Q16
+
+/* var char = prompt('Enter a char')
+
+if (!char || char === '' || char === ' ' || !isNaN(+char))
+  console.log('enter a valid char');
+else {
+
+switch (char) {
+	case 'a':
+	case 'A':
+	case 'e':
+	case 'E':
+	case 'i':
+	case 'I':
+	case 'o':
+	case 'O':
+	case 'u':
+	case 'U':
+		console.log('Vowel')
+		break;
+	default: 
+	console.log('Consonat')
+}
+} */
+
+// NOTE:- Q17
+
+/* var num1 = prompt('Please enter a number 1: ');
+var num2 = prompt('Please enter a number 2: ');
+if (
+  !num1 ||
+  num1 === '' ||
+  num1 === ' ' ||
+  isNaN(+num1) ||
+  !num2 ||
+  num2 === '' ||
+  num2 === ' ' ||
+  isNaN(+num2)
+)
+  console.log('enter a valid num1ber');
+else {
+  num1 = +num1;
+  num2 = +num2;
+
+	switch (true) {
+		case num1 > num2:
+			console.log(num1 + ' is the Max')
+			break;
+		case num2 > num1:
+			console.log(num2 + ' is the Max')
+			break;
+			default: 
+			console.log('both are equals')
+	}
+
+} */
+
+// NOTE:- Q18
+
+
+/* var num1 = prompt('Please enter a number 1: ');
+if (
+  !num1 ||
+  num1 === '' ||
+  num1 === ' ' ||
+  isNaN(+num1) 
+)
+  console.log('enter a valid num1ber');
+else {
+  num1 = +num1;
+  switch(true) {
+		case num1 % 2 === 0 :
+			console.log('Even')
+			break;
+			default:
+				console.log("Odd")
+	}
+
+} */
+
+
+// NOTE:- Q19
+
+
+/* var num1 = prompt('Please enter a number 1: ');
+if (
+  !num1 ||
+  num1 === '' ||
+  num1 === ' ' ||
+  isNaN(+num1) 
+)
+  console.log('enter a valid num1ber');
+else {
+  num1 = +num1;
+  switch(true) {
+		case num1 > 0 :
+			console.log('Positive')
+			break;
+		case num1 < 0 :
+			console.log('Negative')
+			break;
+			default:
+				console.log("Zero")
+	}
+
+} */
+
+
+// NOTE:- Q20
+
+/* var num1 = prompt('Please enter a number 1: ');
+var num2 = prompt('Please enter a number 2: ');
+var char = prompt('Enter arithmetic operator(+ | - | * | /): ')
+if (
+  !num1 ||
+  num1 === '' ||
+  num1 === ' ' ||
+  isNaN(+num1) ||
+  !num2 ||
+  num2 === '' ||
+  num2 === ' ' ||
+  isNaN(+num2) 
+)
+  console.log('enter a valid number');
+else {
+  num1 = +num1;
+  num2 = +num2;
+
+	switch (char) {
+		case '+':
+			console.log(num1 + num2);
+			break;
+		case '-':
+			console.log(num1 - num2);
+			break;
+		case '*':
+			console.log(num1 * num2);
+			break;
+		case '/':
+			console.log(num1 / num2);
+			break;
+			default: 
+			console.log('Not a valid operator')
+	}
+} */
