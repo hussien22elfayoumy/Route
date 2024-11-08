@@ -61,7 +61,6 @@ function displayQuote() {
 
   if (currQuoteName) {
     if (currQuoteName.textContent === quoteName) {
-      console.log('heeeeeey');
       quoteName = quotes[randNumber()].quoteName;
       quoteAuther = quotes[randNumber()].author;
     }
