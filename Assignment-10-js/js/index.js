@@ -59,11 +59,9 @@ function displayQuote() {
   var quoteName = quotes[index].quoteName;
   var quoteAuther = quotes[index].author;
 
-  if (currQuoteName) {
-    if (currQuoteName.textContent === quoteName) {
-      quoteName = quotes[randNumber()].quoteName;
-      quoteAuther = quotes[randNumber()].author;
-    }
+  if (currQuoteName?.textContent === quoteName) {
+    quoteName = quotes[randNumber()].quoteName;
+    quoteAuther = quotes[randNumber()].author;
   }
 
   document.getElementById('quote').innerHTML = `
