@@ -60,8 +60,10 @@ function displayQuote() {
   var quoteAuther = quotes[index].author;
 
   if (currQuoteName?.textContent === quoteName) {
-    quoteName = quotes[randNumber()].quoteName;
-    quoteAuther = quotes[randNumber()].author;
+    index = randNumber();
+    quoteName = quotes[index].quoteName;
+    quoteAuther = quotes[index].author;
+    console.log(index);
   }
 
   document.getElementById('quote').innerHTML = `
