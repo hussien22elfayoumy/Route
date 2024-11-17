@@ -84,32 +84,14 @@
       </button>
       <button
         id="update-product-form"
-        class="btn btn-primary text-center d-block ms-auto mt-4"
+        class="btn btn-primary text-center d-block ms-auto mt-4 d-none"
       >
         Update Product
       </button>
     </div>
 
     <div class="w-75 mx-auto text-center p-2 mt-4">
-      <div class="row g-3">
-        <div class="col-lg-3 col-sm-6">
-          <div class="card p-2 pb-3">
-            <img class="w-100 d-block" src="imgs/lab-1.jpg" alt="" />
-            <h2 class="mt-2 mb-0 fs-5"><span class="pe-1">[0]</span>Name:</h2>
-            <p class="m-0">price:</p>
-            <p class="mb-1">Category:</p>
-            <p class="mb-3">Description:</p>
-            <div class="d-flex align-items-center justify-content-center gap-2">
-              <button id="update-card" class="btn btn-warning btn-sm">
-                Update
-              </button>
-              <button id="delete-product" class="btn btn-danger btn-sm">
-                Delete
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div id="product-container" class="row g-3"></div>
     </div>
 
     <script src="./js/bundle.min.js"></script>
