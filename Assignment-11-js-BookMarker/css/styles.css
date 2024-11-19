@@ -1,0 +1,18 @@
+:root {
+  --pacifio-font: 'Pacifico', cursive;
+  --righteous-font: 'Righteous', sans-serif;
+  --gradient-color-1: #3fa55b;
+  --gradient-color-2: #b2ab49;
+  --bg-submit-btn: #d1512d;
+  --bg-visit-btn: ##3fa55b;
+  --bg-delete-btn: #d30a20;
+}
+
+body {
+  font-family: 'PT Sans Caption', sans-serif;
+  background-color: #f7ecde;
+}
+
+::selection {
+  background-color: #ffc260;
+}
