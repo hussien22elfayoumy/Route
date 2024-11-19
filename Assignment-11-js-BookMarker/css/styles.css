@@ -6,13 +6,39 @@
   --bg-submit-btn: #d1512d;
   --bg-visit-btn: ##3fa55b;
   --bg-delete-btn: #d30a20;
+  --main-transition: all 0.3s ease;
 }
 
 body {
   font-family: 'PT Sans Caption', sans-serif;
   background-color: #f7ecde;
+  color: rgb(33, 37, 41);
 }
 
 ::selection {
   background-color: #ffc260;
+}
+
+header h1 {
+  font-family: var(--pacifio-font);
+  color: rgb(53, 46, 40);
+  font-size: 3rem;
+  position: relative;
+}
+
+header h1::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 70%;
+  background-color: #ffc260;
+  transition: var(--main-transition);
+}
+
+header h1:hover::before {
+  top: 30%;
 }
