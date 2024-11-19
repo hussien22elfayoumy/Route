@@ -22,7 +22,7 @@ body {
 header h1 {
   font-family: var(--pacifio-font);
   color: rgb(53, 46, 40);
-  font-size: 3rem;
+  font-size: 3.125rem;
   position: relative;
 }
 
@@ -41,4 +41,39 @@ header h1::before {
 
 header h1:hover::before {
   top: 30%;
+}
+
+/* SECTION: FORM */
+
+.form-section {
+  border-top: 2px dotted rgb(33, 37, 41);
+  border-bottom: 2px dotted rgb(33, 37, 41);
+}
+
+.form-section h2 {
+  font-family: var(--righteous-font);
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-image: linear-gradient(
+    to right,
+    var(--gradient-color-1),
+    var(--gradient-color-2)
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.form-section .submit-btn {
+  background-color: var(--bg-submit-btn);
+  color: #fff;
+  transition: var(--main-transition);
+}
+
+.form-section .submit-btn:hover {
+  background-color: #b74626;
+}
+
+.form-section .form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 194, 96, 0.6);
+  border-color: #fff;
 }
