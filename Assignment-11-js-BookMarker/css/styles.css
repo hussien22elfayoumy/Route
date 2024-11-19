@@ -4,8 +4,8 @@
   --gradient-color-1: #3fa55b;
   --gradient-color-2: #b2ab49;
   --bg-submit-btn: #d1512d;
-  --bg-visit-btn: ##3fa55b;
-  --bg-delete-btn: #d30a20;
+  --bg-visit-btn: #98af27;
+  --bg-delete-btn: #e20f27;
   --main-transition: all 0.3s ease;
 }
 
@@ -75,5 +75,39 @@ header h1:hover::before {
 
 .form-section .form-control:focus {
   box-shadow: 0 0 0 0.25rem rgba(255, 194, 96, 0.6);
-  border-color: #fff;
+  border-color: #ffc260;
+}
+
+.form-section .form-control.is-valid:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+.form-section .form-control.is-invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+/* SECTION: table */
+
+.table-section .visit-btn {
+  background-color: var(--bg-visit-btn);
+  color: #fff;
+  transition: var(--main-transition);
+}
+.table-section .visit-btn:hover {
+  background-color: #8a9e23;
+}
+
+.table-section .delete-btn {
+  background-color: var(--bg-delete-btn);
+  color: #fff;
+}
+
+.table-section .delete-btn:hover {
+  background-color: #d30a20;
+}
+
+.table-section tr {
+  vertical-align: middle;
 }

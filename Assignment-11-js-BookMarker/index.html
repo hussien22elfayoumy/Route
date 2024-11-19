@@ -21,8 +21,8 @@
   </head>
   <body>
     <main>
-      <div class="container d-flex flex-column align-items-center">
-        <header class="my-5">
+      <div class="container d-flex flex-column align-items-center my-5">
+        <header class="mb-5">
           <h1>Bookmarker</h1>
         </header>
 
@@ -33,25 +33,25 @@
           </h2>
           <form>
             <div class="mb-4">
-              <label for="exampleFormControlInput1" class="form-label fw-bold">
+              <label for="siteName" class="form-label fw-bold">
                 <i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label
               >
               <input
                 type="text"
                 class="form-control"
-                id="exampleFormControlInput1"
+                id="siteName"
                 placeholder="Bookmark Name"
               />
             </div>
 
             <div class="mb-4">
-              <label for="exampleFormControlInput1" class="form-label fw-bold">
+              <label for="siteURL" class="form-label fw-bold">
                 <i class="fa-solid fa-link me-2"></i>Site URL</label
               >
               <input
                 type="url"
                 class="form-control"
-                id="exampleFormControlInput1"
+                id="siteURL"
                 placeholder="Wbsite URL"
               />
             </div>
@@ -60,8 +60,35 @@
           </form>
         </section>
 
-        <section class="table-section align-self-stretch">
-          <table></table>
+        <section
+          class="table-section align-self-stretch text-center border rounded-2 overflow-hidden"
+        >
+          <table class="table table-hover mb-0">
+            <thead>
+              <tr>
+                <th scope="col">Index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>
+                  <button class="btn visit-btn">
+                    <i class="fa-solid fa-eye"></i> Visit
+                  </button>
+                </td>
+                <td>
+                  <button class="btn delete-btn">
+                    <i class="fa-solid fa-trash-can"></i> Delete
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </section>
       </div>
     </main>
