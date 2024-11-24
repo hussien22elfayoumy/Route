@@ -1,3 +1,4 @@
+// TODO: INIT
 const siteName = document.querySelector('#siteName');
 const siteURL = document.querySelector('#siteURL');
 const submitBtn = document.querySelector('#submitBtn');
@@ -9,11 +10,13 @@ const closeBtn = document.querySelector('#closeBtn');
 
 let bookmarkList = [];
 
+// TODO: LOAD ALL BOOKMARKS FORM LOCALSTORAGE IF THERE
 if (localStorage.getItem('bookmarks') !== null) {
   bookmarkList = JSON.parse(localStorage.getItem('bookmarks'));
   renderAllBookmarks();
 }
 
+// TODO: ADD BOOKMARKS TO THE LIST
 function addBookmarkToList() {
   let newSiteUrl = '';
   if (!siteURL.value.startsWith('https://www.')) {
@@ -35,21 +38,7 @@ function addBookmarkToList() {
   localStorage.setItem('bookmarks', JSON.stringify(bookmarkList));
 }
 
-function removeBookmarkFromList(id) {
-  bookmarkList.splice(id, 1);
-  bookmarksContainer.innerHTML = '';
-  localStorage.setItem('bookmarks', JSON.stringify(bookmarkList));
-  renderAllBookmarks();
-}
-
-function emptyFormInputs() {
-  siteName.value = null;
-  siteURL.value = null;
-
-  siteName.classList.remove('is-valid');
-  siteURL.classList.remove('is-valid');
-}
-
+// TODO: ADD NEW BOOKMARK AT THE END OF THE LIST AND RENDER IT
 function renderNewBookmark() {
   bookmarksContainer.innerHTML += `
 		<tr>
@@ -77,6 +66,7 @@ function renderNewBookmark() {
   initDeleteBtn();
 }
 
+// TODO: DISPLAY ALL THE BOOKMARKS
 function renderAllBookmarks() {
   for (let i = 0; i < bookmarkList.length; i++) {
     bookmarksContainer.innerHTML += `
@@ -104,6 +94,7 @@ function renderAllBookmarks() {
   initDeleteBtn();
 }
 
+// TODO: INIT DELETE BTN AFTER RENDER THE BOOKMARKS
 function initDeleteBtn() {
   const deleteBtns = document.querySelectorAll('#deleteBtn');
 
@@ -115,6 +106,24 @@ function initDeleteBtn() {
   }
 }
 
+// TODO: DELTE BOOKMARKS FROM THE LIST
+function removeBookmarkFromList(id) {
+  bookmarkList.splice(id, 1);
+  bookmarksContainer.innerHTML = '';
+  localStorage.setItem('bookmarks', JSON.stringify(bookmarkList));
+  renderAllBookmarks();
+}
+
+// TODO: CLEAR FORM INPUTS AFTER SUMBITTION
+function emptyFormInputs() {
+  siteName.value = null;
+  siteURL.value = null;
+
+  siteName.classList.remove('is-valid');
+  siteURL.classList.remove('is-valid');
+}
+
+// TODO: HANDLE FORM SUMBITTION
 submitBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
@@ -129,6 +138,7 @@ submitBtn.addEventListener('click', (e) => {
   }
 });
 
+// TODO: VALIDATE INPUT DATA AND VISUALISE IT
 function validateInput(inputName) {
   const value = inputName.value;
   const id = inputName.id;
@@ -152,6 +162,7 @@ for (let i = 0; i < allInputs.length; i++) {
   });
 }
 
+// TODO: HIDE THE ERROR OVERLAY
 overlay.addEventListener('click', (e) => {
   if (e.target.id === 'overlay' || e.target.id === 'closeBtn') {
     overlay.classList.replace('d-block', 'd-none');
