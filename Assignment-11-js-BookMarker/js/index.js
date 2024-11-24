@@ -4,6 +4,9 @@ const submitBtn = document.querySelector('#submitBtn');
 const bookmarksContainer = document.querySelector('#bookmarksContainer');
 const allInputs = document.querySelectorAll('.form-control');
 
+const overlay = document.querySelector('#overlay');
+const closeBtn = document.querySelector('#closeBtn');
+
 let bookmarkList = [];
 
 if (localStorage.getItem('bookmarks') !== null) {
@@ -122,8 +125,7 @@ submitBtn.addEventListener('click', (e) => {
 
     emptyFormInputs();
   } else {
-    // if (!validateInput(siteName)) siteName.classList.add('is-invalid');
-    // if (!validateInput(siteURL)) siteURL.classList.add('is-invalid');
+    overlay.classList.replace('d-none', 'd-block');
   }
 });
 
@@ -149,3 +151,9 @@ for (let i = 0; i < allInputs.length; i++) {
     validateInput(allInputs[i]);
   });
 }
+
+overlay.addEventListener('click', (e) => {
+  if (e.target.id === 'overlay' || e.target.id === 'closeBtn') {
+    overlay.classList.replace('d-block', 'd-none');
+  }
+});

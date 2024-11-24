@@ -11,6 +11,13 @@
       rel="stylesheet"
     />
 
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css
+"
+      rel="stylesheet"
+    />
+
     <title>BookMarker - Hussien</title>
 
     <link rel="stylesheet" href="css/all.min.css" />
@@ -96,8 +103,43 @@
             </tbody>
           </table>
         </section>
+
+        <div
+          id="overlay"
+          class="overlay bg-black bg-opacity-25 position-fixed top-0 end-0 start-0 bottom-0 d-flex align-items-center justify-content-center d-none"
+        >
+          <div class="message bg-white p-4 border-1 border-danger rounded-3">
+            <div
+              class="icons d-flex align-items-center justify-content-between mb-4"
+            >
+              <div class="colored-icons">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+
+              <i id="closeBtn" class="fa-solid fa-xmark fs-3 close-icon"></i>
+            </div>
+
+            <h2 class="mb-3">
+              Site Name or Url is not valid, Please follow the <br />
+              rules below :
+            </h2>
+            <p class="mb-0">
+              <i class="fa-regular fa-circle-right me-2 text-danger"></i>Site
+              name must contain at least 3 characters
+            </p>
+            <p class="mb-0">
+              <i class="fa-regular fa-circle-right me-2 text-danger"></i>Site
+              URL must be a valid one
+            </p>
+          </div>
+        </div>
       </div>
     </main>
+    <script src="
+		https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js
+		"></script>
     <script src="js/bundle.min.js"></script>
     <script src="js/index.js"></script>
   </body>

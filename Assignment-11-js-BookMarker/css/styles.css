@@ -116,3 +116,36 @@ a {
 .table-section tr {
   vertical-align: middle;
 }
+
+/* div overlay */
+
+.overlay .colored-icons div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #4db748;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.overlay .colored-icons div:nth-child(1) {
+  background-color: #f15f5d;
+}
+
+.overlay .colored-icons div:nth-child(2) {
+  background-color: #febe2e;
+}
+
+.overlay .close-icon {
+  cursor: pointer;
+}
+
+.overlay h2 {
+  font-family: var(--righteous-font);
+  font-size: 1.3125rem;
+}
+
+.overlay p {
+  font-size: 1.12rem;
+  color: rgb(33, 37, 41);
+}
