@@ -56,7 +56,9 @@
               />
             </div>
 
-            <button class="btn submit-btn d-block mx-auto px-5">Submit</button>
+            <button id="submitBtn" class="btn submit-btn d-block mx-auto px-5">
+              Submit
+            </button>
           </form>
         </section>
 
@@ -72,21 +74,25 @@
                 <th scope="col">Delete</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
+            <tbody id="bookmarksContainer">
+              <!-- <tr>
                 <th scope="row">1</th>
                 <td>Mark</td>
                 <td>
-                  <button class="btn visit-btn">
-                    <i class="fa-solid fa-eye"></i> Visit
-                  </button>
+                  <a href="">
+                    <button id="visitBtn" class="btn visit-btn">
+                      <i class="fa-solid fa-eye"></i>
+                      Visit
+  
+                    </button>
+                  </a>
                 </td>
                 <td>
-                  <button class="btn delete-btn">
+                  <button id="deleteBtn" class="btn delete-btn">
                     <i class="fa-solid fa-trash-can"></i> Delete
                   </button>
                 </td>
-              </tr>
+              </tr> -->
             </tbody>
           </table>
         </section>
