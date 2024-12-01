@@ -49,3 +49,16 @@ h1 {
   text-decoration: underline;
   color: var(--color-primary);
 }
+
+.home {
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #24353f;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}

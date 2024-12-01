@@ -6,8 +6,10 @@ const validateMessage = document.querySelector('#validateMessage');
 
 const signUpBtn = document.querySelector('#signUpBtn');
 
+// TODO: Add the new user to the local storage or if it first time make one
 const usersList = JSON.parse(localStorage.getItem('usersList')) || [];
 
+// TODO: Add new user to the users list
 function addUserToList() {
   const user = {
     userName: userName.value,
@@ -18,12 +20,14 @@ function addUserToList() {
   localStorage.setItem('usersList', JSON.stringify(usersList));
 }
 
+// TODO: empty inputs
 function emptyInputs() {
   userName.value = null;
   userEmail.value = null;
   userPassword.value = null;
 }
 
+// TODO: Check if email is already in users list;
 function checkUserEmail() {
   const local = JSON.parse(localStorage.getItem('usersList'));
   if (local) {
@@ -36,6 +40,22 @@ function checkUserEmail() {
   }
 }
 
+// TODO: Signing the user up
+function signUp() {
+  addUserToList();
+  emptyInputs();
+
+  validateMessage.innerHTML = 'Sucess';
+  if (validateMessage.classList.contains('text-danger'))
+    validateMessage.classList.replace('text-danger', 'text-success');
+  else validateMessage.classList.add('text-success');
+
+  setTimeout(() => {
+    window.location.href = '../index.html';
+  }, 1000);
+}
+
+// TODO: handel user signup and validation
 signUpBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
@@ -55,17 +75,3 @@ signUpBtn.addEventListener('click', (e) => {
     validateMessage.innerHTML = 'All inputs is required';
   }
 });
-
-function signUp() {
-  addUserToList();
-  emptyInputs();
-
-  validateMessage.innerHTML = 'Sucess';
-  if (validateMessage.classList.contains('text-danger'))
-    validateMessage.classList.replace('text-danger', 'text-success');
-  else validateMessage.classList.add('text-success');
-
-  setTimeout(() => {
-    window.location.href = '../index.html';
-  }, 1000);
-}

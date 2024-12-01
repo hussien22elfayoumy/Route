@@ -3,13 +3,10 @@ const userPassword = document.querySelector('#userPassword');
 const validateMessage = document.querySelector('#validateMessage');
 const loginBtn = document.querySelector('#loginBtn');
 
-console.log(JSON.parse(localStorage.getItem('usersList')));
+// TODO: Remove logged user if the user go back from home page
+localStorage?.removeItem('loggedInUser');
 
-loginBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  checkUser();
-});
-
+// TODO: Check if the user founded or not
 function foundedUser() {
   const local = JSON.parse(localStorage.getItem('usersList'));
   if (local) {
@@ -23,23 +20,26 @@ function foundedUser() {
   }
 }
 
+// TODO: Empty inputs filds
 function emptyInputs() {
   userEmail.value = null;
   userPassword.value = null;
 }
 
-function checkUser() {
+// TODO: Validate and process to login to the home
+function logIn() {
   const user = foundedUser();
   if (user.length > 0) {
     emptyInputs();
     navigateToHome();
 
+    // TODO: Add the founded user to local storage
     localStorage.setItem('loggedInUser', JSON.stringify(user));
-
-    validateMessage.innerHTML = 'Sucess';
 
     loginBtn.classList.add('disabled');
     loginBtn.innerHTML = 'Logging In ...';
+
+    validateMessage.innerHTML = 'Sucess';
 
     if (validateMessage.classList.contains('text-danger'))
       validateMessage.classList.replace('text-danger', 'text-success');
@@ -53,6 +53,12 @@ function checkUser() {
   }
 }
 
+// TODO: navigate to home if user founded
 function navigateToHome() {
   setTimeout(() => (window.location.href = 'pages/home.html'), 1000);
 }
+
+loginBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  logIn();
+});
