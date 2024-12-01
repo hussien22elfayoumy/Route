@@ -47,7 +47,7 @@ function checkUser() {
   } else {
     validateMessage.classList.add('text-danger');
 
-    if (userEmail.value || userPassword.value)
+    if (userEmail.value && userPassword.value)
       validateMessage.innerHTML = 'incorrect email or password';
     else validateMessage.innerHTML = 'All inputs is required';
   }

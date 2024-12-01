@@ -38,24 +38,34 @@ function checkUserEmail() {
 
 signUpBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  if (checkUserEmail()) {
-    validateMessage.classList.add('text-danger');
-    validateMessage.innerHTML = 'email already exists';
-    userEmail.value = null;
-  } else {
-    addUserToList();
-    emptyInputs();
 
-    if (validateMessage.classList.contains('text-danger')) {
-      validateMessage.classList.replace('text-danger', 'text-success');
-      validateMessage.innerHTML = 'Sucess';
+  if (userName.value && userEmail.value && userPassword.value) {
+    if (checkUserEmail()) {
+      validateMessage.classList.add('text-danger');
+      validateMessage.innerHTML = 'email already exists';
+      userEmail.value = null;
     } else {
-      validateMessage.classList.add('text-success');
-      validateMessage.innerHTML = 'Sucess';
-    }
+      signUp();
 
-    setTimeout(() => {
-      window.location.href = '../index.html';
-    }, 2000);
+      signUpBtn.classList.add('disabled');
+      signUpBtn.innerHTML = 'Signing you up ...';
+    }
+  } else {
+    validateMessage.classList.add('text-danger');
+    validateMessage.innerHTML = 'All inputs is required';
   }
 });
+
+function signUp() {
+  addUserToList();
+  emptyInputs();
+
+  validateMessage.innerHTML = 'Sucess';
+  if (validateMessage.classList.contains('text-danger'))
+    validateMessage.classList.replace('text-danger', 'text-success');
+  else validateMessage.classList.add('text-success');
+
+  setTimeout(() => {
+    window.location.href = '../index.html';
+  }, 1000);
+}
