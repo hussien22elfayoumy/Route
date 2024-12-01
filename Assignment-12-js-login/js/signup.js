@@ -75,3 +75,6 @@ signUpBtn.addEventListener('click', (e) => {
     validateMessage.innerHTML = 'All inputs is required';
   }
 });
+
+// TODO: Remove logged user if the user go back from home page
+localStorage?.removeItem('loggedInUser');
