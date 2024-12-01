@@ -1,0 +1,13 @@
+body {
+  background-color: #24353f;
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.form-control,
+.form-control:focus {
+  color: #fff;
+}
