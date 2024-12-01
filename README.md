@@ -16,4 +16,4 @@
 
 - Simple Quotes App generator (Assignment-10-js) [→ live demo](https://hussien22elfayoumy.github.io/Route/Assignment-10-js/)
 
-- Site BookMarker (Assignment-11-js) [→ live demo](https://hussien22elfayoumy.github.io/Route/Assignment-11-js-BookMarker/)
+- Site BookMarker (Assignment-11-js) [→ live demo](https://hussien22elfayoumy.github.io/Route/Assignment-11-js-bookmarker/)
