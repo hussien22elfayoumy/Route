@@ -68,8 +68,9 @@ function renderNewBookmark() {
 
 // TODO: DISPLAY ALL THE BOOKMARKS
 function renderAllBookmarks() {
+  let container = '';
   for (let i = 0; i < bookmarkList.length; i++) {
-    bookmarksContainer.innerHTML += `
+    container += `
 		<tr>
 				<th scope="row">${i + 1}</th>
 				<td>${bookmarkList.at(i).siteName}</td>
@@ -90,7 +91,7 @@ function renderAllBookmarks() {
 	
 	`;
   }
-
+  bookmarksContainer.innerHTML = container;
   initDeleteBtn();
 }
 

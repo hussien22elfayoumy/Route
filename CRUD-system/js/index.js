@@ -74,8 +74,9 @@ function displayLastProduct() {
 }
 
 function displayAllProducts(arr) {
+  let container = '';
   for (let i = 0; i < arr.length; i++) {
-    productContainer.innerHTML += `
+    container += `
 		<div class="col-lg-3 col-sm-6">
 			<div class="card p-2 pb-3">
 				<img class="w-100 d-block" src="imgs/${arr[i].productImg}" alt="" />
@@ -102,6 +103,7 @@ function displayAllProducts(arr) {
 		</div>
 `;
   }
+  productContainer.innerHTML = container;
   initUpdateBtns();
   initDeleteBtns();
 }
