@@ -52,7 +52,7 @@ function signUp() {
 
   setTimeout(() => {
     window.location.href = '../index.html';
-  }, 1000);
+  }, 500);
 }
 
 // TODO: handel user signup and validation

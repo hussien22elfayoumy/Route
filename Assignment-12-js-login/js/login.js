@@ -29,7 +29,7 @@ function emptyInputs() {
 // TODO: Validate and process to login to the home
 function logIn() {
   const user = foundedUser();
-  if (user.length > 0) {
+  if (user?.length > 0) {
     emptyInputs();
     navigateToHome();
 
@@ -55,7 +55,7 @@ function logIn() {
 
 // TODO: navigate to home if user founded
 function navigateToHome() {
-  setTimeout(() => (window.location.href = 'pages/home.html'), 1000);
+  setTimeout(() => (window.location.href = 'pages/home.html'), 500);
 }
 
 loginBtn.addEventListener('click', (e) => {
