@@ -4,7 +4,13 @@
   --primary-color: #009ad8;
   --main-transition: all 0.4s ease;
 }
-
+body {
+  background-color: var(--bg-darker);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .navbar {
   background-color: var(--bg-darker);
 }
@@ -25,4 +31,47 @@
 
 .navbar-toggler:focus {
   box-shadow: 0 0 0 4px var(--primary-color);
+}
+
+/* NOTE: hero section */
+
+.hero {
+  background-image: url(../imgs/banner.png);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* NOTE: footer */
+.footer {
+  background-color: var(--bg-darkd);
+}
+
+.footer input {
+  background-color: var(--bg-darker);
+  border: none;
+}
+.footer button {
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+}
+
+.footer .icons i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--bg-darker);
+  color: var(--primary-color);
+  transition: var(--main-transition);
+}
+
+.footer .icons i:hover {
+  background-color: var(--primary-color);
+  color: #fff;
 }
