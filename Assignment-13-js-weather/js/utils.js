@@ -1,5 +1,5 @@
 const API_KEY = '6d8fd84e6bae4d9087b102341241012';
-const BASE_URL = 'http://api.weatherapi.com/v1';
+const BASE_URL = 'https://api.weatherapi.com/v1';
 
 export function formateDate(value) {
   const date = new Intl.DateTimeFormat('en-GB', {
