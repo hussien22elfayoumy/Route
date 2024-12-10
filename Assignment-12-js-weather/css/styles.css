@@ -1,6 +1,6 @@
 :root {
   --bg-darker: #1e202b;
-  --bg-darkd: #262936;
+  --bg-dark: #262936;
   --primary-color: #009ad8;
   --main-transition: all 0.4s ease;
 }
@@ -11,6 +11,52 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.text-grey {
+  color: rgb(191, 193, 200);
+}
+
+.text-color-primary {
+  color: var(--primary-color);
+}
+
+.my-bg-dark {
+  background-color: var(--bg-dark);
+}
+
+.my-bg-darker {
+  background-color: var(--bg-darker);
+}
+
+.fs-100 {
+  font-size: 100px;
+}
+
+.special-input input {
+  color: #fff;
+  background-color: var(--bg-darker);
+  border: none;
+}
+
+.special-input input:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+.special-input button {
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  transition: var(--main-transition);
+}
+
+.special-input button:hover {
+  background-color: #0184b7;
+}
+
+/* NOTE: navbar */
 .navbar {
   background-color: var(--bg-darker);
 }
@@ -43,20 +89,7 @@ a {
 
 /* NOTE: footer */
 .footer {
-  background-color: var(--bg-darkd);
-}
-
-.footer input {
-  background-color: var(--bg-darker);
-  border: none;
-}
-.footer button {
-  border: none;
-  background-color: var(--primary-color);
-  color: #fff;
-  top: 5px;
-  right: 5px;
-  bottom: 5px;
+  background-color: var(--bg-dark);
 }
 
 .footer .icons i {
