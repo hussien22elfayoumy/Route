@@ -108,3 +108,7 @@ a {
   background-color: var(--primary-color);
   color: #fff;
 }
+
+.iconImg {
+  width: 120px;
+}

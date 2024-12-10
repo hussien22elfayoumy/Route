@@ -64,6 +64,7 @@
       <div class="container">
         <div class="position-relative special-input mx-auto w-75 mb-5">
           <input
+            id="searchIput"
             class="w-100 p-3 rounded-pill"
             type="email"
             placeholder="Enter your Email to Subscribe"
@@ -77,16 +78,20 @@
               <div
                 class="d-flex justify-content-between my-bg-darker bg-opacity-25 px-3 py-2"
               >
-                <p class="m-0">Tuesday</p>
-                <p class="m-0">10December</p>
+                <p id="weekDay" class="m-0">Tuesday</p>
+                <p id="dayAndMonth" class="m-0">15December</p>
               </div>
               <div class="card-details py-4 px-4">
-                <h2 class="name">Cairo</h2>
-                <p class="degree text-white fs-100 fw-bold">21.3&deg;C</p>
-                <div class="icon mb-3 ps-4">
-                  <i class="fa fa-solid fa-bars"></i>
+                <h2 id="locationName" class="name">Cairo</h2>
+                <p id="degree" class="degree text-white fs-100 fw-bold mb-0">
+                  21.3&deg;C
+                </p>
+                <div class="icon mb-2 ps-4">
+                  <img id="iconImg" class="iconImg" alt="" />
                 </div>
-                <p class="weather-status text-color-primary">Clear</p>
+                <p id="dayStatus" class="weather-status text-color-primary">
+                  Clear
+                </p>
                 <div
                   class="d-flex align-items-center justify-content-center gap-4"
                 >
@@ -96,7 +101,7 @@
                     <div class="image">
                       <img src="imgs/icon-umberella.png" />
                     </div>
-                    <span>20%</span>
+                    <span id="rain">20%</span>
                   </div>
 
                   <div
@@ -105,7 +110,7 @@
                     <div class="image">
                       <img src="imgs/icon-wind.png" />
                     </div>
-                    <span>18km/h</span>
+                    <span id="wind">18km/h</span>
                   </div>
 
                   <div
@@ -114,7 +119,7 @@
                     <div class="image">
                       <img src="imgs/icon-compass.png" />
                     </div>
-                    <span>East</span>
+                    <span id="windDir">East</span>
                   </div>
                 </div>
               </div>
@@ -126,17 +131,26 @@
               <div
                 class="d-flex justify-content-center my-bg-darker bg-opacity-50 px-3 py-2"
               >
-                <p class="m-0">Tuesday</p>
+                <p id="weekDay-1" class="m-0">Tuesday</p>
               </div>
-              <div class="card-details pt-5">
+              <div class="card-details py-5">
                 <div class="icon mb-3 p-3">
-                  <i class="fa fa-solid fa-bars"></i>
+                  <img id="iconImg-1" src="" alt="" />
                 </div>
-                <p class="degree text-white fw-bold fs-3 mb-0">21.3&deg;C</p>
+                <p id="maxDegree-1" class="degree text-white fw-bold fs-3 mb-0">
+                  21.3&deg;C
+                </p>
 
-                <p class="degree text-white=50 fw-semibold fs-5">14.9&deg;C</p>
+                <p
+                  id="minDegree-1"
+                  class="degree text-white=50 fw-semibold fs-5"
+                >
+                  14.9&deg;C
+                </p>
 
-                <p class="weather-status text-color-primary">Clear</p>
+                <p id="dayStatus-1" class="weather-status text-color-primary">
+                  Clear
+                </p>
               </div>
             </div>
           </div>
@@ -146,17 +160,26 @@
               <div
                 class="d-flex justify-content-center my-bg-darker bg-opacity-50 px-3 py-2"
               >
-                <p class="m-0">Tuesday</p>
+                <p id="weekDay-2" class="m-0">Tuesday</p>
               </div>
-              <div class="card-details pt-5">
+              <div class="card-details py-5">
                 <div class="icon mb-3 p-3">
-                  <i class="fa fa-solid fa-bars"></i>
+                  <img id="iconImg-2" src="" alt="" />
                 </div>
-                <p class="degree text-white fw-bold fs-3 mb-0">21.3&deg;C</p>
+                <p id="maxDegree-2" class="degree text-white fw-bold fs-3 mb-0">
+                  21.3&deg;C
+                </p>
 
-                <p class="degree text-white=50 fw-semibold fs-5">14.9&deg;C</p>
+                <p
+                  id="minDegree-2"
+                  class="degree text-white=50 fw-semibold fs-5"
+                >
+                  14.9&deg;C
+                </p>
 
-                <p class="weather-status text-color-primary">Clear</p>
+                <p id="dayStatus-2" class="weather-status text-color-primary">
+                  Clear
+                </p>
               </div>
             </div>
           </div>
