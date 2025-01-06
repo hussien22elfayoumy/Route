@@ -11,7 +11,7 @@ export default function Home() {
 
           <Header
             title="start framework"
-            color="zinc-100"
+            color="zinc-50"
             bgColor="green-light"
           />
           <p>Graphic Artist - Web Designer - Illustrator</p>
