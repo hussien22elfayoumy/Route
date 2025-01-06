@@ -1,5 +1,5 @@
-import { FaStar } from "react-icons/fa";
 import heroImage from "../assets/heroImage.svg";
+import Header from "../components/Header";
 export default function Home() {
   return (
     <section className="bg-green-light text-zinc-100">
@@ -9,10 +9,11 @@ export default function Home() {
             <img src={heroImage} className="w-full" alt="hero image" />
           </div>
 
-          <h1 className="text-4xl font-bold uppercase">start Framework</h1>
-          <div className="relative h-1 w-[50%] bg-zinc-100">
-            <FaStar className="bg-green-light absolute left-[50%] top-[50%] size-8 translate-x-[-50%] translate-y-[-50%] rounded-full p-1" />
-          </div>
+          <Header
+            title="start framework"
+            color="zinc-100"
+            bgColor="green-light"
+          />
           <p>Graphic Artist - Web Designer - Illustrator</p>
         </div>
       </div>
