@@ -6,7 +6,7 @@ import { FaPlus } from "react-icons/fa";
 
 export default function Portifolio() {
   return (
-    <section className="pg-zinc-50 mb-8 pt-28">
+    <section className="pg-zinc-50 mb-8 px-5 pt-28">
       <div className="container mx-auto">
         <Header
           title="portfolio component"

@@ -4,7 +4,7 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-blue-light text-center text-zinc-100">
-      <div className="container mx-auto grid grid-cols-3 gap-5 py-20">
+      <div className="container mx-auto grid gap-10 px-5 py-20 md:grid-cols-3">
         <div className="space-y-2">
           <h2 className="text-xl font-semibold uppercase tracking-wider">
             LOCATION
@@ -42,7 +42,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      <div className="bg-blue-dark py-5 font-semibold">
+      <div className="bg-blue-dark px-5 py-5 font-semibold">
         Copyright &copy; Your Website {new Date().getFullYear()}
       </div>
     </footer>

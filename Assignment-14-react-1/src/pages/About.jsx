@@ -9,14 +9,14 @@ export default function About() {
           color="zinc-100"
           bgColor="green-light"
         />
-        <div className="grid grid-cols-2 gap-10">
-          <p className="ms-auto max-w-[80%]">
+        <div className="mx-auto grid max-w-[1200px] gap-10 p-5 md:grid-cols-2">
+          <p>
             Freelancer is a free bootstrap theme created by Route. The download
             includes the complete source files including HTML, CSS, and
             JavaScript as well as optional SASS stylesheets for easy
             customization.
           </p>
-          <p className="me-auto max-w-[80%]">
+          <p>
             Freelancer is a free bootstrap theme created by Route. The download
             includes the complete source files including HTML, CSS, and
             JavaScript as well as optional SASS stylesheets for easy
